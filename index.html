@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+            font-family: Roboto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <h2 class="text-center text-success">Weather App</h2> <br>
+            <div class="input-group mb-3">
+                <input id="cityName" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-danger" id="searchButton">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="iconWeather" src="" alt="" width="100px" height="100px">
+            <h1 id="cityChange"></h1>
+            <h2 class="text-warning" ><span id="tempValue"></span></h2>
+            <h2 class="lead text-warning" id="description"></h2>
+            <h3 class="text-warning"  id="humidity"></h3>
+            <h3 class="text-warning"  id="wind"></h3>
+            <h3 class="text-warning" ><span id="sunsetTime"></span></h3>
+            <h3 class="text-warning" id="date"></h3>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
